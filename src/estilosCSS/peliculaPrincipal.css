@@ -1,8 +1,74 @@
 .peliculaPrincipal{
     font-size: 16px;
     min-height: 40.62em;
-    background-image: url("../imagenes/banner.png");
+    background:linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url(../imagenes/banner.png);
     background-position: center center;
-    background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.peliculaPrincipal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.peliculaPrincipal .titulo{
+    font-weight: 600px;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+.peliculaPrincipal .descripcion{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.peliculaPrincipal .boton{
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.peliculaPrincipal .boton svg{
+    margin-right: 1.25em;
+}
+
+.peliculaPrincipal .boton:hover{
+    background: #fff;
+    color: #000;
+    
+}
+
+/*--------------- Media Queries--------------*/
+
+@media screen and (max-width: 800px){
+
+    .peliculaPrincipal{
+      font-size: 14px;
+    }
+  
+    .peliculaPrincipal .descripcion{
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 455px ){
+    .peliculaPrincipal .boton{
+        font-size: 12px;
+    }
+    
+
 }

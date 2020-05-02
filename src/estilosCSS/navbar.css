@@ -4,14 +4,6 @@
   
   }
 
-
-
-.contenedor{
-    width: 90%;
-    margin: auto;
-    max-width: 1500px;
-  }
-  
   header{
     padding: 30px 0;
   }
@@ -19,11 +11,12 @@
   header .contenedor{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
   }
   
   header .logotipo{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     font-weight: normal;
     font-size: 40px;
     color: var(--rojo);
