@@ -1,0 +1,41 @@
+:root{
+    --rojo: #E50914;
+    --fondo: #141414;
+  
+  }
+
+
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+    max-width: 1500px;
+  }
+  
+  header{
+    padding: 30px 0;
+  }
+  
+  header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logotipo{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 40px;
+    color: var(--rojo);
+  }
+  
+  header nav a{
+    color: #AAA;
+    text-decoration: none;
+    padding-right: 20px;
+  }
+  
+  header nav a:hover,
+  header nav a.active {
+    color:#FFF;
+  }

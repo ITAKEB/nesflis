@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+//import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+//import 'font-awesome/css/font-awesome.min.css';
+//import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"></link>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,8 @@
+.peliculaPrincipal{
+    font-size: 16px;
+    min-height: 40.62em;
+    background-image: url("../imagenes/banner.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
