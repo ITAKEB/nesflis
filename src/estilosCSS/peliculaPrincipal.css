@@ -1,7 +1,7 @@
 .peliculaPrincipal{
     font-size: 16px;
     min-height: 40.62em;
-    background:linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url(../imagenes/banner.png);
+    background:linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url(../imagenes/banner.png);
     background-position: center center;
     background-size: cover;
     color: #ffffff;

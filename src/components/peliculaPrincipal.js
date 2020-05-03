@@ -1,27 +1,22 @@
 import React, { Component } from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//extraer iconos de fontawesome
-import { faInfoCircle, faPlay } from "@fortawesome/free-solid-svg-icons";
-
-import {Boton} from "./botones.js"
-
+import { PeliculaInicio } from "./peliculaInicio.js";
 
 export default class PeliculaPrincipal extends Component {
+  state = {
+    titulo: "Big hero 6",
+    descripcion:
+      "Why bother with the movement of the train, their high heels like polished hooves against the gray metal of the car’s floor. The Sprawl was a steady pulse of pain midway down his spine. He tried to walk past her back into the dark, curled in his capsule in some coffin hotel.",
+  };
+
+
   render() {
     return (
       <div className="peliculaPrincipal">
-        <div className="contenedor">
-          <h3 className="titulo">Big hero 6</h3>
-          <p className="descripcion">
-            Adipisicing tempor nisi est irure Lorem proident reprehenderit
-            cupidatat voluptate enim nostrud qui laborum. Et esse ipsum occaecat
-            ipsum cupidatat dolor. Sit sit velit irure minim Lorem exercitation
-            exercitation sunt aliqua commodo.
-          </p>
-          <Boton icon={<FontAwesomeIcon icon={faPlay} />}>Reproducir</Boton >
-          <Boton icon={<FontAwesomeIcon icon={faInfoCircle} />}>Más información</Boton>
-        </div>
+        <PeliculaInicio
+          titulo={this.state.titulo}
+          descripcion={this.state.descripcion}
+        ></PeliculaInicio>
       </div>
     );
   }
